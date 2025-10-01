@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+header {
+  background: linear-gradient(135deg, #22b5bf 0%, #1a9aa3 100%);
+  padding: 1.2rem 3rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://templatemo.com/templates/templatemo_580_woox_travel/assets/images/banner-01.jpg")
+      center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero-content {
+  margin-top: -80px;
+}
+
+.hero h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.cta-button {
+  padding: 1rem 3rem;
+  background: transparent;
+  color: #22b5bf;
+  border: 2px solid #22b5bf;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.cta-button:hover {
+  background: #22b5bf;
+  color: white;
+}
+
+.info-card {
+  position: absolute;
+  bottom: 120px;
+
+  background: white;
+  border-radius: 50px;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  width: 1200px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.info-icon i {
+  color: #22b5bf;
+  font-size: 1.5rem;
+}
+
+.icon-blue {
+  border: 1px solid #22b5bf;
+}
+
+.info-details h3 {
+  color: #999;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+
+.info-details p {
+  color: #22b5bf;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.explore-button {
+  padding: 1rem 2.5rem;
+  background: #22b5bf;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: auto;
+  transition: all 0.3s;
+  font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+
+.explore-button:hover {
+  background: none;
+  border: 1px solid #22b5bf;
+  color: #22b5bf;
+}
+.progress-indicators {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  gap: 2rem;
+}
+
+.progress-item {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.progress-bar {
+  width: 90%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.progress-bar.active {
+  background: #22b5bf;
+  width: 90%;
+}
+
+.progress-number {
+  color: white;
+  font-size: 1.2rem;
+}
