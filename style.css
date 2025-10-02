@@ -4,12 +4,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #22b5bf;
+}
+
 body {
   font-family: "Roboto", sans-serif !important;
 }
 
 header {
-  background: linear-gradient(135deg, #22b5bf 0%, #1a9aa3 100%);
+  background: var(--primary-color);
   padding: 1.2rem 3rem;
   position: fixed;
   width: 100%;
@@ -96,8 +100,8 @@ nav {
 .cta-button {
   padding: 1rem 3rem;
   background: transparent;
-  color: #22b5bf;
-  border: 2px solid #22b5bf;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
   border-radius: 50px;
   font-size: 1rem;
   cursor: pointer;
@@ -106,7 +110,7 @@ nav {
 }
 
 .cta-button:hover {
-  background: #22b5bf;
+  background: var(--primary-color);
   color: white;
 }
 
@@ -142,12 +146,12 @@ nav {
 }
 
 .info-icon i {
-  color: #22b5bf;
+  color: var(--primary-color);
   font-size: 1.5rem;
 }
 
 .icon-blue {
-  border: 1px solid #22b5bf;
+  border: 1px solid var(--primary-color);
 }
 
 .info-details h3 {
@@ -158,14 +162,14 @@ nav {
 }
 
 .info-details p {
-  color: #22b5bf;
+  color: var(--primary-color);
   font-size: 1.3rem;
   font-weight: bold;
 }
 
 .explore-button {
   padding: 1rem 2.5rem;
-  background: #22b5bf;
+  background: var(--primary-color);
   color: white;
   border: none;
   border-radius: 50px;
@@ -178,8 +182,8 @@ nav {
 
 .explore-button:hover {
   background: none;
-  border: 1px solid #22b5bf;
-  color: #22b5bf;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 .progress-indicators {
   position: absolute;
@@ -203,7 +207,7 @@ nav {
 }
 
 .progress-bar.active {
-  background: #22b5bf;
+  background: var(--primary-color);
   width: 90%;
 }
 
